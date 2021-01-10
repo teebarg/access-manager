@@ -25,11 +25,11 @@ function UnauthenticatedApp() {
           },
         }}
       >
-        <img
+        {/* <img
           src="/auth.png"
           alt="login image"
           css={{ width: "100%", height: "100%", opacity: 0.5 }}
-        />
+        /> */}
       </div>
       <div
         css={{
@@ -39,7 +39,7 @@ function UnauthenticatedApp() {
           [mq.small]: {
             "::after": {
               content: "''",
-              background: "url('/auth.png')",
+              background: "red",
               opacity: 0.4,
               top: 0,
               left: 0,
