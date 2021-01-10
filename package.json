@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "dotenv": "^8.2.0",
+    "encoding": "^0.1.13",
     "faunadb": "^4.0.0",
     "react": "^17.0.1",
     "react-async": "^10.0.1",
@@ -23,7 +24,6 @@
   "scripts": {
     "build": "run-p build:**",
     "build:app": "react-scripts build",
-    "pllllllbuild:lambda": "netlify-lambda build src/lambda",
     "build:lambda": "netlify-lambda build src/lambda --config ./configs/webpack.functions.js",
     "start": "react-scripts start",
     "test": "react-scripts test",

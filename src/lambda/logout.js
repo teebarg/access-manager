@@ -8,7 +8,6 @@ const client = new faunadb.Client({
 });
 
 exports.handler = async (event, context) => {
-  const path = event.path.replace(/\.netlify\/functions\/[^\/]+/, '');
 
   switch (event.httpMethod) {
     case 'GET':
