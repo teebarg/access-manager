@@ -34,8 +34,7 @@ function UnauthenticatedApp() {
       <div
         css={{
           display: "grid",
-          alignItems: "center",
-          padding: "10px",
+          padding: "20px",
           [mq.small]: {
             "::after": {
               content: "''",
@@ -48,11 +47,32 @@ function UnauthenticatedApp() {
               position: "absolute",
               zIndex: -1,
               backgroundSize: "cover",
-              backgroundPosition: "center"
-            }
+              backgroundPosition: "center",
+            },
           },
         }}
       >
+        <div
+          css={{
+            display: "grid",
+            placeItems: "center"
+          }}
+        >
+          <div
+            css={{
+              borderRadius: "50px",
+              maxWidth: 75,
+              maxHeight: 75,
+              overflow: "hidden",
+            }}
+          >
+            <img
+              src="/cynatics.png"
+              alt="Company image"
+              css={{ width: "100%" }}
+            />
+          </div>
+        </div>
         <Login />
       </div>
     </div>
